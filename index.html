@@ -10,15 +10,15 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #1e1e1e;  /* Dark background matching the app */
             margin: 0;
             padding: 0;
             text-align: center;
-            color: #003366;  /* Dark navy for text */
+            color: #ffffff;  /* Light text color */
         }
         header {
-            background-color: #003366;  /* Dark navy */
-            color: #ADD8E6;  /* Light blue for the headline */
+            background-color: #0066cc;  /* Matching the embedded app's color */
+            color: #ffffff;
             padding: 20px 0;
         }
         header h1 {
@@ -27,20 +27,31 @@
         }
         header p {
             font-size: 1.2rem;
-            color: #003366;  /* Dark navy for the subheading */
         }
         section {
             padding: 30px;
             margin-top: 20px;
         }
         footer {
-            background-color: #003366;  /* Dark navy */
+            background-color: #0066cc;  /* Matching color of header */
             color: white;
             padding: 10px;
             font-size: 1rem;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .gradio-app {
+            background-color: #333333;  /* Dark background for the embedded app */
+            color: #ffffff;  /* Light text color inside the app */
+        }
+        .gradio-app input, .gradio-app button {
+            background-color: #FF6F00;  /* Orange button, similar to your app's button color */
+            color: #ffffff;  /* White text on button */
+            border: none;
+        }
+        .gradio-app input:focus, .gradio-app button:focus {
+            outline: none;  /* Remove focus outlines */
         }
     </style>
 </head>
@@ -66,4 +77,3 @@
 
 </body>
 </html>
-
